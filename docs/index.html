@@ -31,7 +31,7 @@ const moon=new THREE.DirectionalLight(0xb8b8ef,2.2);moon.position.set(-8,16,5);m
 const redLight=new THREE.PointLight(0xb21b3b,30,32);redLight.position.set(0,5,-8);scene.add(redLight);
 const mat=(color,roughness=.85,metalness=0)=>new THREE.MeshStandardMaterial({color,roughness,metalness});
 const glowMat=(color,emissive,intensity=1.5)=>new THREE.MeshStandardMaterial({color,emissive,emissiveIntensity:intensity,roughness:.32,metalness:.25});
-const stone=mat(0x29242d),darkStone=mat(0x17131d),groundMat=mat(0x211b25),bloodMat=new THREE.MeshStandardMaterial({color:0xb80e35,emissive:0x5c0018,roughness:.4}),steel=mat(0x55515e,.38,.65),cloak=mat(0x53152d),skin=mat(0xd6b1a6),gold=mat(0xa9854b,.4,.7);
+const stone=mat(0x29242d),darkStone=mat(0x17131d),groundMat=mat(0x211b25),bloodMat=new THREE.MeshStandardMaterial({color:0xb80e35,emissive:0x5c0018,roughness:.4}),steel=mat(0x55515e,.38,.65),cloak=mat(0x53152d),skin=mat(0x70483d,.72,0),gold=mat(0xa9854b,.4,.7);
 const obsidian=mat(0x100d15,.25,.78),crimson=glowMat(0x8f102d,0xf01646,2.6),silver=mat(0x9b8e9b,.24,.82);
 function box(parent,x,y,z,sx,sy,sz,m){const o=new THREE.Mesh(new THREE.BoxGeometry(sx,sy,sz),m);o.position.set(x,y,z);o.castShadow=true;o.receiveShadow=true;parent.add(o);return o}
 function cylinder(parent,x,y,z,rt,rb,h,m,n=8){const o=new THREE.Mesh(new THREE.CylinderGeometry(rt,rb,h,n),m);o.position.set(x,y,z);o.castShadow=true;parent.add(o);return o}
@@ -45,12 +45,41 @@ for(let i=0;i<9;i++){const x=(i%3-1)*5,z=-12-Math.floor(i/3)*2;box(scene,x,1.1,z
 const moonBall=new THREE.Mesh(new THREE.SphereGeometry(2.3,20,20),new THREE.MeshBasicMaterial({color:0x73152c}));moonBall.position.set(11,13,-27);scene.add(moonBall);
 const halo=new THREE.Mesh(new THREE.TorusGeometry(3,.12,8,48),bloodMat);halo.position.copy(moonBall.position);halo.rotation.x=.5;scene.add(halo);
 const player=new THREE.Group();scene.add(player);
-const body=cylinder(player,0,1.15,0,.42,.52,1.05,cloak,10);const torso=cylinder(player,0,1.55,0,.36,.43,.62,obsidian,10);
-const breastplate=box(player,0,1.56,.31,.52,.48,.12,steel);breastplate.rotation.x=-.08;box(player,0,1.15,.03,.58,.2,.48,obsidian);
-for(let side of [-1,1]){const pa=new THREE.Mesh(new THREE.SphereGeometry(.22,10,8),steel);pa.position.set(side*.39,1.78,0);pa.scale.set(1,.72,1.1);player.add(pa);box(player,side*.2,1.56,.39,.035,.42,.025,gold);cylinder(player,side*.2,.28,.04,.14,.17,.48,obsidian,8);const shin=box(player,side*.2,.48,.19,.22,.34,.1,steel);shin.rotation.x=-.08;}
-const head=new THREE.Mesh(new THREE.SphereGeometry(.25,18,14),skin);head.position.y=2.05;player.add(head);
-cylinder(player,0,2.13,-.05,.31,.34,.5,darkStone,12);for(let i=0;i<9;i++){const side=(i%2?1:-1),row=Math.floor(i/2);const braid=cylinder(player,side*(.12+row*.025),1.78-row*.075,.04-row*.035,.045,.055,.62,i%3===0?crimson:cloak,7);braid.rotation.z=side*(.12+row*.035);braid.rotation.x=-.12;}
-const cape=box(player,0,1.22,-.34,.82,1.2,.13,cloak);cape.rotation.x=-.16;const capeEdge=box(player,0,1.18,-.415,.72,1.08,.025,crimson);capeEdge.rotation.x=-.16;box(player,0,1.87,.12,.34,.12,.22,obsidian);
+// Nina Storm — visual upgrade: darker skin, obsidian armor, crimson accents and queen's crown.
+const body=cylinder(player,0,1.13,0,.42,.5,1.04,cloak,12);
+const torso=cylinder(player,0,1.55,0,.34,.41,.64,obsidian,12);
+const breastplate=box(player,0,1.56,.31,.53,.49,.13,obsidian);breastplate.rotation.x=-.08;
+box(player,0,1.16,.03,.59,.22,.48,obsidian);
+box(player,0,1.58,.385,.34,.34,.035,silver);
+const chestGem=new THREE.Mesh(new THREE.OctahedronGeometry(.105,0),crimson);chestGem.position.set(0,1.59,.42);player.add(chestGem);
+for(let side of [-1,1]){
+ const pa=new THREE.Mesh(new THREE.SphereGeometry(.24,12,9),steel);pa.position.set(side*.4,1.78,0);pa.scale.set(1,.72,1.1);player.add(pa);
+ const pauldron=new THREE.Mesh(new THREE.SphereGeometry(.25,10,8),obsidian);pauldron.position.set(side*.4,1.84,.06);pauldron.scale.set(1,.55,1);player.add(pauldron);
+ box(player,side*.2,1.56,.39,.035,.42,.025,crimson);
+ cylinder(player,side*.2,.28,.04,.14,.17,.48,obsidian,8);
+ const shin=box(player,side*.2,.48,.19,.22,.34,.1,steel);shin.rotation.x=-.08;
+ const knee=new THREE.Mesh(new THREE.SphereGeometry(.13,8,8),crimson);knee.position.set(side*.2,.66,.24);player.add(knee);
+}
+const head=new THREE.Mesh(new THREE.SphereGeometry(.255,20,16),skin);head.position.set(0,2.05,.035);player.add(head);
+for(const side of [-1,1]){
+ const eye=new THREE.Mesh(new THREE.SphereGeometry(.035,10,8),glowMat(0xff294f,0xff0033,3.5));
+ eye.position.set(side*.092,2.075,.264);eye.scale.set(1,.72,.55);player.add(eye);
+ const brow=box(player,side*.092,2.125,.26,.105,.025,.025,obsidian);brow.rotation.z=side*.12;
+}
+const hairCap=new THREE.Mesh(new THREE.SphereGeometry(.27,14,10,0,Math.PI*2,0,Math.PI*.56),obsidian);
+hairCap.position.set(0,2.17,-.005);player.add(hairCap);
+for(let i=0;i<11;i++){
+ const side=i%2===0?-1:1,row=Math.floor(i/2);
+ const braid=cylinder(player,side*(.12+row*.028),1.77-row*.075,.12-row*.045,.047,.052,.67,(i%3===0)?crimson:obsidian,8);
+ braid.rotation.z=side*(.12+row*.035);braid.rotation.x=-.1;
+ const bead=new THREE.Mesh(new THREE.SphereGeometry(.045,8,7),i%3===0?gold:crimson);
+ bead.position.set(side*(.12+row*.028),1.48-row*.075,.12-row*.045);player.add(bead);
+}
+box(player,0,2.31,.02,.39,.055,.17,silver);
+for(let i=-1;i<=1;i++){const spike=cylinder(player,i*.145,2.405,.02,.012,.055,.19,i===0?crimson:gold,6);spike.rotation.z=i*.22;}
+const collar=box(player,0,1.91,.15,.39,.16,.25,obsidian);collar.rotation.x=-.15;
+const cape=box(player,0,1.2,-.34,.86,1.22,.13,cloak);cape.rotation.x=-.16;
+const capeEdge=box(player,0,1.17,-.415,.74,1.1,.025,crimson);capeEdge.rotation.x=-.16;
 const sword=new THREE.Group();player.add(sword);sword.position.set(.58,1.35,0);const blade=box(sword,.28,.25,0,.13,.9,.09,silver);blade.rotation.z=-.15;const bloodEdge=box(sword,.345,.25,.052,.025,.78,.018,crimson);bloodEdge.rotation.z=-.15;box(sword,.24,-.2,0,.42,.09,.16,gold);box(sword,.06,-.32,0,.09,.25,.09,darkStone);
 const shadow=new THREE.Mesh(new THREE.CircleGeometry(.7,16),new THREE.MeshBasicMaterial({color:0x000000,transparent:true,opacity:.42}));shadow.rotation.x=-Math.PI/2;shadow.position.y=.01;player.add(shadow);
 const keys={};let started=false,health=100,essence=0,kills=0,goldCount=0,potions=2,attackTime=0,whipTime=0,dodgeTime=0,bloodTime=0,invuln=0,gameOver=false,win=false,hitFlash=0,moveTouch={x:0,z:0},lastMessage=0;
