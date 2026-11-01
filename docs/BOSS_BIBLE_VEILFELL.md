@@ -179,7 +179,9 @@
 26. **Nina's Bloodstorm (Epilogue Trial)** — An optional post-campaign trial against a manifestation of Nina's own power, not a second canonical Nina. Tests all learned mechanics and offers a mastery reward rather than a story-ending kill. Proposed reward: *Bloodstorm Sovereign* title and a cosmetic aura.
 
 ### Scope and production plan
-- **Campaign target:** 26 named boss encounters across six acts, with boss 26 as an optional epilogue trial.
+- **Original campaign target:** 26 named boss encounters across six acts, with boss 26 as an optional epilogue trial.
+- **Updated campaign target (Kaine-approved): 41 bosses total** — the original 26-boss campaign roster plus the 15 additional mythic bosses documented below. The mythic arc's internal numbering (1–15) is separate from the campaign's overall numbering.
+- **Planning note:** Keep the original six-act roster intact and place the 15 mythic encounters as an additional arc or integrated optional/mandatory regional encounters. A later campaign map should assign each of the 41 bosses a unique global number, act/region, unlock condition, and reward.
 - **Playable milestone 1:** build and tune Hollow Knight, Dread Knight, and one contrasting boss (recommended: Blood Abbess Veyra) before producing all 26.
 - **Reusable boss architecture:** share health, stagger, telegraph, phase, arena-boundary, reward, and execution systems; give each boss at least one distinctive mechanic, one phase change, and one counterplay lesson.
 - **Reward economy:** not every boss must grant a full new active ability. Mix abilities, relics, weapon techniques, upgrades, cosmetics, lore, and access keys to avoid overwhelming mobile controls and the player.
@@ -273,9 +275,9 @@
 
 ## Kaine's proposed Mythic Boss Arc — 15 Legendary Encounters
 
-**Status:** New user-supplied concepts expanded with original backstories and encounter details. These are proposals for the wider Veilfell campaign, not currently implemented bosses. This arc can coexist with the 26-boss campaign roster as a mythic side-campaign, an alternate roster, or a set of regional legendary encounters. Final placement and numbering should be reconciled during campaign planning.
+**Status:** Kaine approved adding these fifteen bosses to the existing 26-boss campaign roster, creating a 41-boss campaign target. These fifteen are additional encounters, not replacements. Backstories and mechanics are design proposals and are not currently implemented.
 
-**Progression proposal:** Defeat bosses 1–5 to obtain the keys or powers needed to open the **Black Reliquary**; defeat bosses 6–10 to reveal the **Sunken Gate**; defeat bosses 11–14 to earn the right to challenge the **Starved Saint**. The exact gate requirements and whether all fights are mandatory remain to be balanced.
+**Mythic arc progression proposal:** Defeat mythic bosses 1–5 to obtain the keys or powers needed to open the **Black Reliquary**; defeat mythic bosses 6–10 to reveal the **Sunken Gate**; defeat mythic bosses 11–14 to earn the right to challenge the **Starved Saint**. These are additional milestones within the 41-boss campaign; exact gate requirements remain to be balanced.
 
 ### 1. Varkhul, the Ashen Warlord
 **Origin:** Orc war-chief  
@@ -452,7 +454,7 @@
 - The arc's weapon rewards fit the approved direction: boss victories can unlock legendary weapons or techniques, while exploration still supplies hidden weapons, upgrades, and secret techniques.
 - Several weapon families overlap with the wider arsenal proposal (scythe, crossbow, nunchucks, heavy sword, rapier, spear, dual katanas, chain whip, twin blades, axe, bow, trident, blood blade). Reuse weapon data and moveset architecture where practical, but give each reward a distinct signature move.
 - Keep all attacks readable on mobile, with telegraphs, safe response windows, and no mandatory pixel-perfect inputs.
-- **Continuity warning:** Eirvane's proposed title overlaps with the existing Hollow Knight concept; rename one before production. Also decide whether the mythic arc is a side campaign alongside the 26-boss roster or whether selected bosses replace/merge with existing entries.
+- **Continuity warning:** Eirvane's proposed title overlaps with the existing Hollow Knight concept; rename one before production. The 15 mythic bosses are additional to, not replacements for, the original 26-boss roster. Resolve similar themes by distinguishing lore, arenas, weapons, and mechanics rather than removing bosses.
 - This document records design intent only; it does not claim these fifteen bosses, rewards, gates, or backstories are implemented in the browser prototype or Unity project.
 
 ## Decisions for Kaine
@@ -461,4 +463,4 @@
 3. Decide whether Nina's major executions are always lethal, or whether certain story choices allow mercy, binding, or recruitment.
 4. Confirm if Ashen Judgment should remain the Dread Knight reward and whether its current 5-damage / 7-radius / 8-second-cooldown prototype values feel right after testing.
 
-**Status:** Design draft for review. Nothing in this document changes the live/main branch or claims these proposed encounters are already playable.
+**Status:** Design draft for review. Kaine has approved the 41-boss target (26 original + 15 mythic additions). Nothing in this document changes the live/main branch or claims these proposed encounters are already playable.
