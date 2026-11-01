@@ -271,6 +271,190 @@
 4. Return to the Queendom armory to compare styles, equip the loadout, and upgrade gear.
 5. Test the new weapon against a later enemy or training challenge so the discovery has an immediate gameplay payoff.
 
+## Kaine's proposed Mythic Boss Arc — 15 Legendary Encounters
+
+**Status:** New user-supplied concepts expanded with original backstories and encounter details. These are proposals for the wider Veilfell campaign, not currently implemented bosses. This arc can coexist with the 26-boss campaign roster as a mythic side-campaign, an alternate roster, or a set of regional legendary encounters. Final placement and numbering should be reconciled during campaign planning.
+
+**Progression proposal:** Defeat bosses 1–5 to obtain the keys or powers needed to open the **Black Reliquary**; defeat bosses 6–10 to reveal the **Sunken Gate**; defeat bosses 11–14 to earn the right to challenge the **Starved Saint**. The exact gate requirements and whether all fights are mandatory remain to be balanced.
+
+### 1. Varkhul, the Ashen Warlord
+**Origin:** Orc war-chief  
+**Weapon:** *Siegebreaker*, a colossal great war hammer  
+**Arena:** The shattered siege field outside an abandoned fortress.
+
+**Backstory:** Varkhul once united the ash clans to defend their homeland from human kings who burned their villages and seized their iron mines. When Veilfell's rulers offered him a treaty, they secretly poisoned the clan wells. Varkhul survived, but his people did not. He swore that no wall, crown, or treaty would ever protect the weak again. The Bloodstorm answered his rage, binding the souls of his fallen warriors into his armor and hammer. He now wages an endless siege against a fortress whose defenders have been dead for centuries.
+
+**Fight identity:** Crushing hammer slams create expanding shockwaves; a shoulder charge with his tower shield controls the arena. His armor resists ordinary attacks until Nina baits a heavy strike into a recovery window.
+
+**Defeat reward — Siegebreaker:** A charged ground slam that staggers nearby enemies. **Arc role:** His broken war-standard bears the first seal needed to locate the Black Reliquary.
+
+### 2. Sythra, Widow of the Moon
+**Origin:** Arachne, spider-woman  
+**Weapon:** *Silk Reaper*, a hooked scythe  
+**Arena:** A moonlit cathedral webbed from floor to ceiling.
+
+**Backstory:** Sythra was once the royal weaver, famed for cloth that could conceal a person from hostile magic. She fell in love with a knight who promised to flee Veilfell with her, but he sold her secret patterns to the Inquisition in exchange for a noble title. Left for dead in the cathedral's bell shaft, Sythra was transformed by a moon-spirit that lived beneath the stone. She spun a web from her grief and trapped the knight, his court, and eventually herself inside it. Every visitor becomes another thread in the story she cannot release.
+
+**Fight identity:** Broad scythe sweeps, sticky web snares, and sudden drops from marked ceiling points. Cutting web anchors creates temporary safe lanes.
+
+**Defeat reward — Silk Reaper:** Hook a nearby lighter enemy toward Nina for a follow-up strike. Her web-pattern tapestry reveals a hidden route toward the Black Reliquary.
+
+### 3. Khepra, the Dune Oracle
+**Origin:** Ancient sphinx  
+**Weapon:** *Sunspitter*, a rune-etched crossbow  
+**Arena:** A buried observatory in the shifting desert.
+
+**Backstory:** Khepra guarded a library that recorded possible futures, not fixed destinies. When a prince demanded a prophecy that would guarantee his victory, Khepra refused, warning that certainty would become his ruin. The prince buried the observatory and its scholars alive. Khepra survived by binding her spirit to the library's golden guardian, but the visions she absorbed fractured her memory. Now she attacks travelers with futures that might have been, testing whether they can choose wisely when every path appears doomed.
+
+**Fight identity:** Ricocheting bolts, explosive ground traps, and sand-clone decoys. Only the real Khepra casts a consistent shadow and leaves a visible trail through the sand.
+
+**Defeat reward — Sunspitter:** Charged bolts pierce multiple aligned targets. Her star-map marks the first clues to the Sunken Gate.
+
+### 4. Ruun, Thunder-Eater
+**Origin:** Oni demon  
+**Weapon:** *Storm Links*, enchanted nunchucks  
+**Arena:** A storm-struck monastery on a mountain ridge.
+
+**Backstory:** Ruun was born from the first thunderstorm after a battlefield was left unburied. Monks captured him and taught him discipline, believing his hunger for lightning could protect their mountain villages. For centuries he served them, absorbing storms before they reached the valley. When the Bloodstorm grew too powerful, the monks chained him to a bell tower and fled. Ruun devoured the chains, the bells, and finally the storm itself. He now mistakes every approaching warrior for another jailer.
+
+**Fight identity:** Fast nunchuck strings build a visible lightning meter. At full charge, Ruun spins into a thunder burst; striking him during the charging tell can interrupt the burst.
+
+**Defeat reward — Storm Links:** Combo hits charge a short-range lightning blast. His broken monastery seal contributes to opening the Black Reliquary.
+
+### 5. Eirvane, the Hollow Knight
+**Origin:** Wraith bound to a ruined suit of armor  
+**Weapon:** *Griefcleaver*, a heavy sword  
+**Arena:** A rain-filled graveyard beneath a ruined watchtower.
+
+**Backstory:** Eirvane was the last sworn shield of a border village. Ordered to abandon the villagers during an undead invasion, he disobeyed and held the gate until every civilian had escaped. His body was destroyed, but his oath was never released. A wraith entered his empty armor and continued guarding a village that no longer exists. Over time, the distinction between protecting the dead and punishing the living disappeared. Eirvane sees Nina as a queen who has returned too late to save anyone.
+
+**Continuity note:** Eirvane is a separate proposed character from the already listed Hollow Knight chapel guardian. Their shared “Hollow Knight” wording should be revised before production to avoid confusion; a rename such as **Eirvane, the Griefbound Wraith** is an option, not a locked change.
+
+**Fight identity:** Slow, punishing heavy-sword strikes; briefly vanishes between attacks and reappears at a marked angle. His recovery is long enough to reward patience.
+
+**Defeat reward — Griefcleaver:** Heavy attacks break enemy guards more effectively. His oath-crest can serve as a key or clue for the Black Reliquary.
+
+### 6. Lady Vael, Thorn of the Court
+**Origin:** Fairy queen corrupted by briars  
+**Weapon:** *Briarpoint*, a courtly rapier  
+**Arena:** A royal garden swallowed by thorn hedges.
+
+**Backstory:** Lady Vael ruled a hidden fae court that maintained the ancient boundaries between Veilfell and the wild places. When human nobles began cutting down her sacred groves, she negotiated peace through gifts and bargains. The nobles broke every bargain, then burned her court's heart-tree. Vael survived by grafting its final thorn into her own heart. The thorn granted her terrible power but fed on every memory of kindness. She now treats every promise as a trap and every visitor as a future betrayer.
+
+**Fight identity:** Precise lunges, feints, and thorn-summoning ripostes. Attacking recklessly into her stance triggers a counter; baiting the riposte creates an opening.
+
+**Defeat reward — Briarpoint:** A perfectly timed dodge empowers Nina's next thrust. Vael's court seal points to a concealed route toward the Sunken Gate.
+
+### 7. Pelagos, the Drowned King
+**Origin:** Sea giant  
+**Weapon:** *Tidepiercer*, a royal spear  
+**Arena:** A flooded throne hall that rises and falls with the tide.
+
+**Backstory:** Pelagos ruled an island kingdom that kept sea monsters away from Veilfell's coast. When a plague emptied his ports, he bargained with an abyssal voice for the power to save his people. The bargain preserved their bodies beneath the sea but stole their names and memories. Pelagos became immortal, surrounded by a court that no longer recognized him. He has spent centuries dragging ships into his flooded palace, hoping one will carry a memory of the kingdom he lost.
+
+**Fight identity:** Long spear thrusts, pressurized water jets, and sweeping tidal attacks. Water-level changes alter movement routes but leave clear visual warnings.
+
+**Defeat reward — Tidepiercer:** Throw the spear and recall it through enemies along its return path. His tide-crown reveals the approach to the Sunken Gate.
+
+### 8. The Kuro Twins
+**Origin:** Twin kitsune spirits  
+**Weapons:** *Dusk* and *Dawn*, paired katanas  
+**Arena:** A shrine forest where paths fold into illusion loops.
+
+**Backstory:** Dusk and Dawn were once twin guardians who guided lost travelers through the spirit forest. When an army invaded, one twin urged retreat while the other stayed to protect the shrine. Both died believing the other had abandoned them. A fox-spirit stitched their souls together, but their memories remained divided: one remembers only betrayal, the other only sacrifice. They now attack anyone who enters the forest, trying to force strangers to choose which twin deserves to survive.
+
+**Fight identity:** One twin pressures Nina with rapid cuts while the other attacks from illusion copies. The active attacker is identified by a distinct aura and sound cue; striking the wrong copy wastes an opening rather than causing unavoidable damage.
+
+**Defeat reward — Dusk & Dawn:** Alternating weapon strikes build a finisher meter. Their restored shrine reveals a hidden technique chamber.
+
+### 9. Morrigaine, the Raven Matron
+**Origin:** Celtic-inspired raven witch  
+**Weapon:** *The Black Tithe*, enchanted soul coins  
+**Arena:** A crooked rookery built around a battlefield cairn.
+
+**Backstory:** Morrigaine once collected coins for the burial of the nameless dead, believing no soul should wander without witness. During a famine, a lord paid her to curse his rivals; the curse spread through the city and claimed innocent families. Morrigaine tried to undo it by trading her own years of life, but the bargain-maker took the souls instead. Since then, she has collected the debts of the dying in black coins, convinced that if she gathers enough she can buy back every stolen life.
+
+**Fight identity:** Coins mark Nina, summon spectral raven dives, or briefly bind areas of the arena. Morrigaine's attacks become more aggressive as marked coins accumulate, but marked coins can be destroyed or avoided.
+
+**Defeat reward — The Black Tithe:** Toss a coin to briefly bind a lesser enemy. The recovered ledger provides a clue to the Sunken Gate's hidden lock.
+
+### 10. Azhdara, Coil of the First Flame
+**Origin:** Persian-inspired dragon serpent  
+**Weapon:** *Cinderlash*, a chain whip  
+**Arena:** A volcanic causeway circling an ancient fire shrine.
+
+**Backstory:** Azhdara was revered as the guardian of a sacred flame that warmed the highland villages through brutal winters. When a warlord tried to steal the flame to power an army, Azhdara wrapped herself around the shrine and swallowed its heart-fire to keep it safe. The flame burned through her from within, turning her scales to obsidian and her breath to cinders. The warlord's empire fell, but Azhdara could never release the fire. She now attacks anything that approaches, unable to tell a thief from someone seeking warmth.
+
+**Fight identity:** Long-range chain lashes leave temporary fire trails; constricting coils telegraph a closing danger zone. Nina must bait a lash into stone to create a punish window.
+
+**Defeat reward — Cinderlash:** Sweep a line of flame across the ground. The shrine's ember-key completes the proposed sequence for revealing the Sunken Gate.
+
+### 11. Nimue, the Glass Leviathan
+**Origin:** Lake spirit / water elemental  
+**Weapon:** *Mirrorwake*, twin crescent blades  
+**Arena:** A crystal lake whose surface reflects a false sky.
+
+**Backstory:** Nimue was the guardian spirit of a lake where villagers left memories they could no longer bear. For generations she carried those memories gently, allowing the grieving to begin again. When the Bloodstorm poisoned the lake, the memories shattered and returned as fragments of rage. Nimue's body became a translucent leviathan, and every reflection began showing her a different version of the world—one in which she had saved everyone. She attacks Nina to test whether the vampire queen is another false reflection.
+
+**Fight identity:** Slippery dashes, reflective decoys, and slicing water arcs. True attacks ripple the lake surface before landing, giving attentive players a readable tell.
+
+**Defeat reward — Mirrorwake:** A dash leaves a damaging afterimage. Her crystal heart opens the route to the final group of mythic trials.
+
+### 12. Baba Yaga's Iron Stag
+**Origin:** Enchanted forest guardian  
+**Weapon:** *Rootrend*, a runic axe  
+**Arena:** A walking grove of ironwood trees around a witch's hut.
+
+**Backstory:** The Iron Stag was created by a hedge-witch to protect an ancient forest from kings who hunted its spirits for magic. When the witch disappeared, the stag continued obeying her final command: let no axe cross the forest boundary. Centuries of war and logging twisted the command into a relentless hunt against every traveler. Rootrend, its axe, was forged from the first tree that ever grew in the grove and remembers every wound dealt to the land.
+
+**Fight identity:** Burrows beneath marked ground, erupts under Nina, and calls grasping roots from safe-looking patches. Root patterns and displaced leaves warn where it will surface.
+
+**Defeat reward — Rootrend:** A charged chop briefly roots nearby lesser foes. The stag's runic antler marks an optional route to the Starved Saint's domain.
+
+### 13. Xolotl, the Bone-Crowned
+**Origin:** Underworld hound spirit  
+**Weapon:** *Last Howl*, a bone bow  
+**Arena:** A black-sand necropolis beside a sealed underworld passage.
+
+**Backstory:** Xolotl once guided the souls of the dead through the last dark passage, ensuring that the living did not follow them. When a plague overwhelmed the roads, he took the bones of fallen guides and crowned himself with their names so he could remember every lost soul. The crown grew heavier with each century until it chained him to the necropolis. Now he believes every living intruder is a soul that has escaped its proper ending. Nina's return enrages him because she crossed death's boundary and brought the storm with her.
+
+**Fight identity:** Seeking bone arrows and summoned ghost-hounds force Nina to reposition. The hounds leave spectral trails that indicate their approach; destroying a summoning marker temporarily stops reinforcements.
+
+**Defeat reward — Last Howl:** Mark a target for a tracking shot. Xolotl's passage-token opens one of the final seals guarding the Starved Saint.
+
+### 14. Tiamat's Exile, Nhalassa
+**Origin:** Abyssal sea dragon  
+**Weapon:** *Undertow*, a trident  
+**Arena:** A broken causeway above a bottomless ocean trench.
+
+**Backstory:** Nhalassa was cast out of an ancient sea-dragon court for refusing to drown a coastal city that had defied its gods. She fled into the abyss with a fragment of the court's tide-heart. The other dragons declared her a traitor and sent storms to erase her name from every shore. Over ages, loneliness and pressure transformed her into a vast abyssal dragon. She now drags ruins beneath the waves, not to conquer the surface, but to hide every place where the world might remember her mercy.
+
+**Fight identity:** Three-pronged trident combos, whirlpools, and crushing pressure waves. Whirlpools are preceded by visible water spirals and pull toward marked centers.
+
+**Defeat reward — Undertow:** Pull lighter enemies toward a target point. Her tide-heart unlocks the final approach to the Starved Saint.
+
+### 15. The Starved Saint
+**Origin:** Fallen celestial  
+**Weapon:** *Red Testament*, a living blood blade  
+**Arena:** The Starless Basilica, suspended above a sea of crimson clouds.
+
+**Backstory:** The Starved Saint descended to Veilfell during the first great famine, promising that no believer would ever hunger again. The miracles worked—at first. The Saint learned to heal the sick by drawing vitality from the willing, then from prisoners, then from entire villages. When the faithful finally rebelled, the Saint insisted the suffering was a sacred sacrifice and fed on the congregation's last prayers. The heavens stripped away its name and light, leaving a celestial being that can feel hunger but can never be satisfied. It sees Nina as both rival and possible successor: a ruler who might accept the same terrible bargain.
+
+**Fight identity:** Fast, risky blood-blade attacks drain the Saint's own health but restore it on successful hits. Nina must interrupt its healing strings, manage punish windows, and avoid being baited into trading damage indefinitely. Its final phase turns the arena's crimson light into clear, avoidable danger lanes.
+
+**Defeat reward — Red Testament:** A powerful life-stealing strike that trades a small amount of Nina's health for damage and healing on hit. The reward should have a clear cost, cooldown or resource limit, and should not create an infinite sustain loop.
+
+**Campaign role:** Proposed final boss of this 15-encounter mythic arc. Defeating it resolves the arc's central question: whether power taken in the name of saving others can ever stop consuming them. Its outcome may be tied to Nina's mercy, dominion, or destruction path, subject to later story approval.
+
+### Mythic Arc production and continuity notes
+- These fifteen encounters are **new proposals expanded from Kaine's supplied roster**; their backstories, arenas, combat details, and rewards are draft content awaiting playtesting and story approval.
+- The five-boss / five-boss / four-boss / final-boss gate sequence is a proposed progression structure. The Black Reliquary and Sunken Gate requirements should be designed as visible milestones, not opaque grind gates.
+- The arc's weapon rewards fit the approved direction: boss victories can unlock legendary weapons or techniques, while exploration still supplies hidden weapons, upgrades, and secret techniques.
+- Several weapon families overlap with the wider arsenal proposal (scythe, crossbow, nunchucks, heavy sword, rapier, spear, dual katanas, chain whip, twin blades, axe, bow, trident, blood blade). Reuse weapon data and moveset architecture where practical, but give each reward a distinct signature move.
+- Keep all attacks readable on mobile, with telegraphs, safe response windows, and no mandatory pixel-perfect inputs.
+- **Continuity warning:** Eirvane's proposed title overlaps with the existing Hollow Knight concept; rename one before production. Also decide whether the mythic arc is a side campaign alongside the 26-boss roster or whether selected bosses replace/merge with existing entries.
+- This document records design intent only; it does not claim these fifteen bosses, rewards, gates, or backstories are implemented in the browser prototype or Unity project.
+
 ## Decisions for Kaine
 1. Approve, rename, or replace any of the six proposed bosses.
 2. Choose whether Father Malrec is a penultimate boss and Seraphel the final boss.
