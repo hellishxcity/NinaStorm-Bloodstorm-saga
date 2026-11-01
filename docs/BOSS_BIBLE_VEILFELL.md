@@ -135,6 +135,57 @@
 - **Recommended first playable order:** Hollow Knight tutorial boss → Dread Knight execution → Blood Abbess Veyra. Build and tune these three before committing to all eight.
 - **Performance direction:** telegraph attacks with simple readable shapes and limited simultaneous effects; keep touch controls forgiving; test on a real mid-range Android device before expanding enemy counts or visual effects.
 
+
+## Expanded 26-Boss Campaign Roster — v0.2 proposal
+
+**Kaine's direction:** target a total roster of 26 bosses. This is a design target, not a claim that 26 encounters are already implemented. The roster below expands the eight-boss draft into a campaign structure with distinct regions, combat lessons, and reward identities. Only Hollow Knight and the prototype Dread Knight are previously established concepts; the remaining entries and their details are proposals until approved.
+
+### Act I — The Ashen March (Bosses 1–5)
+1. **Hollow Knight** — Chapel guardian; teaches dodge timing and punish windows. Proposed reward: *Chapel Oath*.
+2. **Dread Knight** — Armored execution target; introduces Bloodright Executions. Prototype reward: *Ashen Judgment*.
+3. **The Red Lantern Warden** — Hunts Nina through a burned village using lantern-marked traps. Proposed reward: *Lanternstep*, a short evasive blink.
+4. **Mara's Betrayer, Sir Corven** — A former safehouse defender using feints and shield counters. Proposed reward: *Oathbreaker Guard*, a counter stance.
+5. **The Blood-Forge Sentinel** — A construct guarding the undercroft seal; stagger its limbs to expose its core. Proposed reward: *Forgeheart Burst*.
+
+### Act II — The Drowned Veil (Bosses 6–9)
+6. **Mirefang, the Fen Tyrant** — Ambush beast in a drowned forest; exposes its flank after a missed charge. Proposed reward: *Mirefang's Grasp*.
+7. **Blood Abbess Veyra** — Shapes the floor with pulsing blood pools. Proposed reward: *Vein Benediction*.
+8. **The Drowned Admiral** — A spectral commander whose anchor chains divide the arena. Proposed reward: *Gravetide Hook*.
+9. **The Weeping Stag** — A corrupted forest guardian; charges through marked lanes and summons root barriers. Proposed reward: *Warden's Antler*, a root-snare skill.
+
+### Act III — The Cinder Crown (Bosses 10–13)
+10. **The Cinder Wyrm** — Furnace dragon with heat lanes and breakable armor. Proposed reward: *Cinderwake*.
+11. **Forge-Mother Kharza** — A giant smith who weaponizes molten chains and hammer shockwaves. Proposed reward: *Molten Reprisal*.
+12. **The Ashen Twins** — Two coordinated duelists who alternate offense and defense; both health bars must be managed. Proposed reward: *Twinfang Rhythm*, a combo modifier.
+13. **The Glass Revenant** — A mirrored knight who copies Nina's last attack after a delay. Proposed reward: *Mirror Rend*, a timed counter slash.
+
+### Act IV — The Bells of the Dead (Bosses 14–17)
+14. **The Bellfather** — Tower keeper whose bell strikes create timed shockwaves. Proposed reward: *Funeral Resonance*.
+15. **The Choir of Hollow Saints** — A multi-target ritual boss; interrupt chanting figures to stop a large attack. Proposed reward: *Saintbreaker Pulse*.
+16. **The Pale Executioner** — A relentless arena duelist who punishes repeated dodge directions. Proposed reward: *Final Measure*, a finisher-enhancing relic.
+17. **The Bone Colossus** — A giant assembled from the dead; climbable weak points are a later stretch goal, with a ground-based version first. Proposed reward: *Gravequake*.
+
+### Act V — The Inquisitor's Reign (Bosses 18–21)
+18. **Father Malrec, the Blood Inquisitor** — Marks Nina and punishes predictable movement. Proposed reward: *Inquisitor's Brand*.
+19. **The Red Judge** — A heavy weapon master who tests parry timing and guard breaks. Proposed reward: *Judgment Edge*.
+20. **The Nightglass Oracle** — Creates false silhouettes and telegraphed arena illusions; every real attack still needs a readable tell. Proposed reward: *Veil Sight*.
+21. **The Crownless Prince** — A fallen royal duelist whose phases reflect Nina's weapon style. Proposed reward: *Crownless Vow*, a weapon stance.
+
+### Act VI — The Veil Throne (Bosses 22–26)
+22. **The Stormbound Leviathan** — A colossal storm creature fought on a shattered causeway; use a grounded arena version for the first playable build. Proposed reward: *Stormcall*.
+23. **The Queen's Shadow** — A supernatural mirror of Nina that reuses a limited set of recognizable player moves. Proposed reward: *Umbral Double*.
+24. **The Fallen Seraph's Herald** — A winged champion who teaches the light/shadow arena rules before the finale. Proposed reward: *Halo Breaker*.
+25. **Seraphel, the Fallen Angel** — Proposed final antagonist encounter, evolving from a precise celestial duel into a Bloodstorm-transformed phase. Proposed reward/ending: *Crown of the Last Storm*, shaped by story choices.
+26. **Nina's Bloodstorm (Epilogue Trial)** — An optional post-campaign trial against a manifestation of Nina's own power, not a second canonical Nina. Tests all learned mechanics and offers a mastery reward rather than a story-ending kill. Proposed reward: *Bloodstorm Sovereign* title and a cosmetic aura.
+
+### Scope and production plan
+- **Campaign target:** 26 named boss encounters across six acts, with boss 26 as an optional epilogue trial.
+- **Playable milestone 1:** build and tune Hollow Knight, Dread Knight, and one contrasting boss (recommended: Blood Abbess Veyra) before producing all 26.
+- **Reusable boss architecture:** share health, stagger, telegraph, phase, arena-boundary, reward, and execution systems; give each boss at least one distinctive mechanic, one phase change, and one counterplay lesson.
+- **Reward economy:** not every boss must grant a full new active ability. Mix abilities, relics, weapon techniques, upgrades, cosmetics, lore, and access keys to avoid overwhelming mobile controls and the player.
+- **Mobile fairness:** telegraphs must be visible on small screens; avoid unavoidable damage, excessive simultaneous particles, long rapid-tap prompts, and camera movement that obscures the boss.
+- **Production truth:** all bosses numbered 3–26 are design proposals. Bosses 1–2 are established concepts, but their current browser implementations remain prototypes. This document does not mean all encounters are playable or that rewards are connected to a complete inventory/save system.
+
 ## Decisions for Kaine
 1. Approve, rename, or replace any of the six proposed bosses.
 2. Choose whether Father Malrec is a penultimate boss and Seraphel the final boss.
