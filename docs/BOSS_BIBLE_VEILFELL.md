@@ -252,6 +252,25 @@
 4. Connect boss reward flags to weapon unlocks and persistent saves only after save/load tests.
 5. Expand weapon families after the first two weapons work reliably on desktop and a real Android device.
 
+## Kaine's approved direction — Weapon Discovery and Rewards
+
+**Decision:** Kaine selected **Option C — Both**. Legendary weapons can be earned from boss victories, while exploration uncovers hidden weapons, upgrades, and secret techniques. This is an approved progression rule, not an implemented game system.
+
+### How the two paths work
+- **Boss victories:** major bosses may award a signature legendary weapon, a weapon technique, a relic, or another reward that fits the encounter. Not every boss must award a full weapon.
+- **Exploration:** hidden chambers, optional dungeons, ruined keeps, secret passages, treasure caches, and environmental challenges can reveal hidden weapons, upgrade materials, weapon enhancements, and secret techniques.
+- **Meaningful discoveries:** exploration rewards should be telegraphed through clues, environmental storytelling, NPC rumors, maps, or unusual landmarks rather than relying only on random drops.
+- **No mandatory grind:** the main story should remain completable without finding every hidden weapon. Optional discoveries reward curiosity and expand build choices.
+- **Arsenal clarity:** each discovered or earned item should identify its fighting style, unlock condition, and any upgrade path in the Queendom armory.
+- **Save integrity:** weapon unlocks and upgrades must be saved only after success is confirmed and verified through save/load testing.
+
+### Suggested first progression loop
+1. Start with the **Royal Longsword**.
+2. Defeat a major boss to earn a signature weapon or technique.
+3. Explore a side dungeon or hidden route to discover a contrasting weapon or upgrade.
+4. Return to the Queendom armory to compare styles, equip the loadout, and upgrade gear.
+5. Test the new weapon against a later enemy or training challenge so the discovery has an immediate gameplay payoff.
+
 ## Decisions for Kaine
 1. Approve, rename, or replace any of the six proposed bosses.
 2. Choose whether Father Malrec is a penultimate boss and Seraphel the final boss.
