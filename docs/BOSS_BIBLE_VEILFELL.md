@@ -214,6 +214,44 @@
 - **Secrets / story / access / cosmetics:** Drowned Admiral, Choir of Hollow Saints, Nightglass Oracle, Fallen Seraph's Herald, Seraphel, Nina's Bloodstorm.
 - **Note:** These categories are a starting balance, not locked rewards; individual assignments may change during combat testing and narrative review.
 
+## Kaine's approved direction — Switchable Weapon Arsenal
+
+**Decision:** Kaine approved Katana's recommendation: Nina can switch between different weapons during combat, with signature weapons supporting distinct fighting styles. This is the chosen design direction; the full weapon-switching system is not yet implemented.
+
+### Core design
+- Nina begins with a reliable primary sword so the early game remains readable and easy to learn.
+- Boss rewards gradually unlock other weapon families, each with a clear combat identity rather than a simple damage upgrade.
+- Players can switch between equipped weapons during combat using a mobile-friendly weapon selector and a keyboard shortcut during desktop testing.
+- Weapon switching should be responsive, but certain heavy attacks and finishers may have commitment frames to preserve skill and balance.
+- Each weapon supports light/heavy attacks, a distinctive combo rhythm, a defensive or mobility strength, and at least one signature technique.
+- Active Blood Magic remains a separate, limited set of abilities; weapon rewards should not force every new power onto the main HUD.
+- Build choices should be reversible at a safe location such as the Queendom, while changing the in-combat weapon loadout stays quick and intuitive.
+
+### Proposed weapon families
+1. **Royal Longsword — Crimson Duelist:** balanced reach, fast combo strings, reliable parries. Nina's starting weapon.
+2. **Twin Bloodblades — Night Veil:** rapid multi-hit attacks, evasive movement, lower reach and commitment.
+3. **War Scythe — Grave Warden:** broad arcs, crowd control, strong stagger, slower recovery.
+4. **Storm Greatsword — Storm Reaver:** heavy stagger and charged strikes, slower attacks with high commitment.
+5. **Blood Whip — Devil's Tongue:** long reach, pulls or interrupts lighter enemies, excels at controlling space.
+6. **Blood Daggers — Night Veil:** quick punishes and mobility, limited range, requires close positioning.
+7. **Executioner's Axe — Grave Warden:** heavy guard breaks and armor damage, slower swing speed.
+8. **Seraphel's Celestial Blade — endgame proposal:** precise light/shadow techniques tied to the final story reward.
+
+### Weapon progression and balance rules
+- Bosses may award a new weapon, a weapon technique, a relic, or a cosmetic; not every reward must be a new weapon.
+- Avoid a single best weapon: trade off reach, speed, stagger, crowd control, defense, and resource use.
+- Bosses should resist crowd-control loops and excessive stagger chaining.
+- Keep touch controls simple: one weapon-switch control plus a compact selection panel; do not require a long sequence of taps during active combat.
+- Show the weapon name, moveset hint, and unlock source in the arsenal screen.
+- The browser prototype's current gold/red sword attachments are visual reward placeholders, not a real multi-weapon inventory.
+
+### Implementation order
+1. Define a weapon data model (identifier, display name, damage profile, combo timing, reach, stagger, unlock requirement, icon, and special move).
+2. Implement one weapon swap and test it with the current five-hit combo.
+3. Add one genuinely different weapon (recommended: Blood Whip) and validate that reach, timing, and touch controls feel distinct.
+4. Connect boss reward flags to weapon unlocks and persistent saves only after save/load tests.
+5. Expand weapon families after the first two weapons work reliably on desktop and a real Android device.
+
 ## Decisions for Kaine
 1. Approve, rename, or replace any of the six proposed bosses.
 2. Choose whether Father Malrec is a penultimate boss and Seraphel the final boss.
