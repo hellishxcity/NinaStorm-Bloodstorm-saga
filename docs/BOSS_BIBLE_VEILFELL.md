@@ -186,6 +186,34 @@
 - **Mobile fairness:** telegraphs must be visible on small screens; avoid unavoidable damage, excessive simultaneous particles, long rapid-tap prompts, and camera movement that obscures the boss.
 - **Production truth:** all bosses numbered 3–26 are design proposals. Bosses 1–2 are established concepts, but their current browser implementations remain prototypes. This document does not mean all encounters are playable or that rewards are connected to a complete inventory/save system.
 
+## Kaine's approved direction — Ultimate Reward System
+
+**Decision:** Kaine selected **Option C**: every boss gets a unique finishing sequence, while rewards vary by boss. This is the approved design direction for the roster, not a claim that the system is already implemented.
+
+### Reward categories
+- **Active abilities:** a limited set of high-impact powers with clear cooldowns or Blood Essence costs.
+- **Weapons and techniques:** new moves, weapon stances, combo variations, or a signature weapon.
+- **Relics and permanent upgrades:** passive bonuses, counter improvements, survivability, or build-defining modifiers.
+- **Secrets and access:** keys, hidden routes, new Queendom functions, lore records, and optional encounters.
+- **Story consequences:** a boss's outcome may affect later dialogue, factions, allies, or the ending where the story supports it.
+- **Cosmetic mastery rewards:** armor looks, auras, execution flourishes, and titles—especially for optional or repeatable trials.
+
+### Execution design rules
+1. Each boss has a distinct finishing identity: weapon use, animation silhouette, and short narrative beat should differ.
+2. Not every finish needs a long cinematic; use a short, readable version for mobile and reserve longer set pieces for key story bosses.
+3. Reward UI clearly names the reward and its category, then explains where it can be equipped or used.
+4. Do not overload the mobile HUD: some rewards enhance existing controls rather than adding new buttons.
+5. Save permanent unlocks only after success is confirmed; show clear feedback if saving fails.
+6. Story-critical bosses can have special outcome rules, but mercy/recruitment choices remain unconfirmed until Kaine decides.
+7. Reuse a common execution framework underneath boss-specific choreography, timing, VFX, and audio.
+
+### Draft reward distribution across 26 bosses
+- **Active abilities / combat powers:** Dread Knight, Blood Abbess Veyra, Mirefang, Cinder Wyrm, Bellfather, Father Malrec, Stormbound Leviathan.
+- **Weapons / techniques / combo variants:** Hollow Knight, Sir Corven, Ashen Twins, Glass Revenant, Red Judge, Crownless Prince.
+- **Relics / permanent upgrades:** Blood-Forge Sentinel, Red Lantern Warden, Weeping Stag, Forge-Mother Kharza, Pale Executioner, Bone Colossus.
+- **Secrets / story / access / cosmetics:** Drowned Admiral, Choir of Hollow Saints, Nightglass Oracle, Fallen Seraph's Herald, Seraphel, Nina's Bloodstorm.
+- **Note:** These categories are a starting balance, not locked rewards; individual assignments may change during combat testing and narrative review.
+
 ## Decisions for Kaine
 1. Approve, rename, or replace any of the six proposed bosses.
 2. Choose whether Father Malrec is a penultimate boss and Seraphel the final boss.
