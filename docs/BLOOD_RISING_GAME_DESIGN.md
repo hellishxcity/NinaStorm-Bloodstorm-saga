@@ -209,6 +209,18 @@ The interface must remain usable on smaller screens and avoid requiring simultan
 
 ---
 
+## Browser Prototype Milestone — v0.1
+
+A first browser-based combat-feel prototype has been added at [`docs/blood-rising-prototype.html`](./blood-rising-prototype.html) on the `dev/blood-rising-project` branch. It is an early playable experiment, not a production build. Current intended prototype systems include:
+
+- Nina/Kaine hero switching in solo play, with the inactive hero following as a simple AI companion.
+- Distinct light/heavy attack damage and cooldowns to test Nina's faster rhythm against Kaine's heavier strikes.
+- A basic Team Bond meter and area Bloodbond finisher.
+- Enemy pursuit, hit reactions, health bars, dodge input, and keyboard/touch controls.
+- A small arena encounter for evaluating combat pacing before expanding into story missions.
+
+**Verification status:** The file is committed to the development branch and its contents were fetched back from GitHub. It has not yet been browser-tested across devices, and its systems are prototype logic only. Online co-op, real networking, animation-driven combat, production-grade AI, full character rigs, and Unity implementation are not included in this milestone.
+
 ## Current Project Decisions
 
 - Title: **NinaStorm: Blood Rising**
@@ -221,4 +233,4 @@ The interface must remain usable on smaller screens and avoid requiring simultan
 - Combat: switchable heroes in solo mode; AI partner; intended two-player co-op
 - Signature system: Bloodbond coordinated attacks, double-team boss strategies, and co-op finishers
 - Boss foundation: 15 mythic bosses adapted from prior planning
-- Production status: design document only; no claim of playable implementation
+- Production status: design foundation plus an early browser combat prototype; full game and online co-op remain unimplemented
