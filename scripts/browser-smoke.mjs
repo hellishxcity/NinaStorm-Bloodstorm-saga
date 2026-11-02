@@ -42,11 +42,14 @@ try {
   // Seed a legitimate existing unlock, toggle it, and confirm persistence across reload.
   {
     const context = await browser.newContext({ viewport: { width: 1280, height: 800 } });
-    await context.addInitScript(() => localStorage.setItem('ninastorm_bloodright_save_v1', JSON.stringify({
-      version: 1, unlockedWeapons: ['skull-tithe'], equippedWeapon: 'blood-blade'
-    })));
     const page = await context.newPage();
     await page.goto(`http://127.0.0.1:${port}`, { waitUntil: 'domcontentloaded' });
+    await page.waitForSelector('canvas', { timeout: 20000 });
+    await page.waitForFunction(() => window.__NINASTORM_READY__ === true, { timeout: 20000 });
+    await page.evaluate(() => localStorage.setItem('ninastorm_bloodright_save_v1', JSON.stringify({
+      version: 1, unlockedWeapons: ['skull-tithe'], equippedWeapon: 'blood-blade'
+    })));
+    await page.reload({ waitUntil: 'domcontentloaded' });
     await page.waitForSelector('canvas', { timeout: 20000 });
     await page.waitForFunction(() => window.__NINASTORM_READY__ === true, { timeout: 20000 });
     await page.locator('#play').click();
