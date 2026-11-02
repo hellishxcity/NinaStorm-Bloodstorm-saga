@@ -317,3 +317,38 @@ Seraveth is an ancient source connected to Nina's vampire bloodline and is also 
 4. Confirm if Ashen Judgment should remain the Dread Knight reward and whether its current 5-damage / 7-radius / 8-second-cooldown prototype values feel right after testing.
 
 **Status:** Design draft for review. The Bloodstorm campaign has exactly 26 boss slots. Boss 26 is the finale sequence: Seraphel appears to be the final boss, then the false ending reveals Queen Seraveth, whose true-finale phase completes that same final encounter. Do not add a 27th boss or a separate 15-boss mythic arc. Nina's Bloodstorm may remain a post-campaign mastery trial only if it is a challenge against Nina's own power—not a new boss roster entry. These proposals are not all playable, and nothing here changes the live/main branch.
+
+## Kaine's approved direction — Bloodright Weapon Transformation
+
+**Decision:** Boss weapons begin in their original boss-owned forms. When Nina executes a designated claimable boss using that weapon, she infuses it with her blood magic. The weapon visibly transforms into its official Bloodstorm form and becomes hers to wield. This is an approved design direction; the full cinematic, weapon inventory, unlock persistence, and Unity implementation are not yet complete.
+
+### Bloodright sequence
+1. A designated claimable boss is defeated and enters the execution state.
+2. Nina performs a boss-specific finisher using the boss's own weapon.
+3. The arena briefly quiets; the weapon is revealed as crimson blood tendrils wrap around it.
+4. Nina's blood magic changes the weapon's silhouette/materials and ignites its blood-runes.
+5. A title card reads **BLOODRIGHT CLAIMED**, showing the weapon's official Bloodstorm name and a short flavor line.
+6. The transformed weapon is added to Nina's arsenal only after the sequence succeeds and the unlock state is confirmed.
+7. If the player misses or interrupts the execution sequence, provide a retry or short recovery path rather than silently losing the reward.
+
+### Confirmed name transformations
+| Boss-owned form | Nina's Bloodright form | Combat identity |
+|---|---|---|
+| Hammer of War | **Skull-Tithe** | Heavy impact, armor break, high stagger, and area shockwaves. |
+| Twin Peaks | **The Widow's Kiss** | Rapid dual-blade combos, bleeding, and high critical potential. |
+| Boss chain whip (working name) | **Devil's Tongue** | Fast multi-target strikes, disarming, and pulling enemies into range. |
+
+### Arsenal naming rules
+- Keep established names unchanged unless Kaine explicitly renames them.
+- **Blood Blade**, **Shadow Spears**, **Soul Chains**, and **Bow of Souls** remain the official names currently on the weapon sheet.
+- **Blood Magic** remains an ability, and **Vampire Form** remains a transformation; neither is a handheld weapon.
+- Boss forms should look more basic, worn, or shaped by the original wielder. Nina's claimed forms gain her signature blackened metal, crimson veins/runes, and blood-magic effects.
+- Only designated claimable bosses grant Bloodright weapons. Other bosses may award abilities, relics, techniques, upgrades, cosmetics, lore, or access keys.
+- Bloodright rewards do not change the locked campaign scope: **exactly 26 boss slots in Bloodstorm**. The additional 15 bosses remain reserved for the sequel.
+
+### Production status and next implementation steps
+- **Design:** approved.
+- **Spreadsheet:** official boss-form → Nina-form mapping recorded in the updated weapon sheet.
+- **Not yet complete:** execution cinematics, boss-specific animation/VFX/audio, real inventory entries, save/load persistence, and Unity integration.
+- **Build order:** implement one end-to-end example first (Hammer of War → Skull-Tithe), test unlock/save/load, then add Twin Peaks → The Widow's Kiss and the chain whip → Devil's Tongue. Validate readability and timing on desktop and an actual mobile device before scaling to other claimable weapons.
+
