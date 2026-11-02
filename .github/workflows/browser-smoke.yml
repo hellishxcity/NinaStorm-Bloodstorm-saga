@@ -1,0 +1,36 @@
+name: NinaStorm Browser Smoke Tests
+
+on:
+  push:
+    branches:
+      - test/bloodright-browser-smoke
+  pull_request:
+    paths:
+      - 'docs/index.html'
+      - 'scripts/browser-smoke.mjs'
+      - '.github/workflows/browser-smoke.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  chromium-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install Playwright
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: Run real-browser smoke tests
+        run: node scripts/browser-smoke.mjs
