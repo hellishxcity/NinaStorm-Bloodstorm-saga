@@ -30,10 +30,11 @@ try {
     await page.waitForFunction(() => window.THREE && document.querySelector('canvas'));
     assert.equal(await page.title(), 'NinaStorm: The Bloodstorm — Prototype');
     assert.equal(await page.locator('#arsenalBtn').innerText(), 'ARSENAL: BLOOD BLADE');
-    await page.locator('#arsenalBtn').click();
-    await page.waitForFunction(() => document.querySelector('#message').textContent.includes('SKULL-TITHE IS LOCKED'));
+    // The start overlay intentionally covers the HUD; enter the prototype before interacting with Arsenal.
     await page.locator('#play').click();
     await page.waitForFunction(() => document.querySelector('#start').style.display === 'none');
+    await page.locator('#arsenalBtn').click();
+    await page.waitForFunction(() => document.querySelector('#message').textContent.includes('SKULL-TITHE IS LOCKED'));
     assert.deepEqual(pageErrors, [], 'Desktop page should not throw runtime JavaScript errors');
     await page.close();
   }
