@@ -27,7 +27,7 @@ try {
     page.on('pageerror', error => pageErrors.push(error.message));
     await page.goto(`http://127.0.0.1:${port}`, { waitUntil: 'domcontentloaded' });
     await page.waitForSelector('canvas', { timeout: 20000 });
-    await page.waitForFunction(() => window.THREE && document.querySelector('canvas'));
+    await page.waitForFunction(() => window.__NINASTORM_READY__ === true, { timeout: 20000 });
     assert.equal(await page.title(), 'NinaStorm: The Bloodstorm — Prototype');
     assert.equal(await page.locator('#arsenalBtn').innerText(), 'ARSENAL: BLOOD BLADE');
     // The start overlay intentionally covers the HUD; enter the prototype before interacting with Arsenal.
@@ -48,6 +48,7 @@ try {
     const page = await context.newPage();
     await page.goto(`http://127.0.0.1:${port}`, { waitUntil: 'domcontentloaded' });
     await page.waitForSelector('canvas', { timeout: 20000 });
+    await page.waitForFunction(() => window.__NINASTORM_READY__ === true, { timeout: 20000 });
     assert.equal(await page.locator('#arsenalBtn').innerText(), 'ARSENAL: BLOOD BLADE');
     await page.locator('#arsenalBtn').click();
     await page.waitForFunction(() => document.querySelector('#arsenalBtn').textContent === 'ARSENAL: SKULL-TITHE');
@@ -55,6 +56,7 @@ try {
     assert.equal(saved.equippedWeapon, 'skull-tithe');
     await page.reload({ waitUntil: 'domcontentloaded' });
     await page.waitForSelector('canvas', { timeout: 20000 });
+    await page.waitForFunction(() => window.__NINASTORM_READY__ === true, { timeout: 20000 });
     assert.equal(await page.locator('#arsenalBtn').innerText(), 'ARSENAL: SKULL-TITHE');
     await page.locator('#arsenalBtn').click();
     await page.waitForFunction(() => document.querySelector('#arsenalBtn').textContent === 'ARSENAL: BLOOD BLADE');
@@ -72,6 +74,7 @@ try {
     const page = await context.newPage();
     await page.goto(`http://127.0.0.1:${port}`, { waitUntil: 'domcontentloaded' });
     await page.waitForSelector('canvas', { timeout: 20000 });
+    await page.waitForFunction(() => window.__NINASTORM_READY__ === true, { timeout: 20000 });
     assert.equal(await page.locator('#pad').count(), 1);
     assert.equal(await page.locator('#attackBtn').count(), 1);
     assert.equal(await page.locator('#dodgeBtn').count(), 1);
