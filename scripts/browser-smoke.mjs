@@ -62,6 +62,8 @@ try {
     await page.reload({ waitUntil: 'domcontentloaded' });
     await page.waitForSelector('canvas', { timeout: 20000 });
     await page.waitForFunction(() => window.__NINASTORM_READY__ === true, { timeout: 20000 });
+    await page.locator('#play').click();
+    await page.waitForFunction(() => document.querySelector('#start').style.display === 'none');
     assert.equal(await page.locator('#arsenalBtn').innerText(), 'ARSENAL: SKULL-TITHE');
     await page.locator('#arsenalBtn').click();
     await page.waitForFunction(() => document.querySelector('#arsenalBtn').textContent === 'ARSENAL: BLOOD BLADE');
