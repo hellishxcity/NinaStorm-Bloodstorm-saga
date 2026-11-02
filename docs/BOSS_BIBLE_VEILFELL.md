@@ -352,3 +352,42 @@ Seraveth is an ancient source connected to Nina's vampire bloodline and is also 
 - **Not yet complete:** execution cinematics, boss-specific animation/VFX/audio, real inventory entries, save/load persistence, and Unity integration.
 - **Build order:** implement one end-to-end example first (Hammer of War → Skull-Tithe), test unlock/save/load, then add Twin Peaks → The Widow's Kiss and the chain whip → Devil's Tongue. Validate readability and timing on desktop and an actual mobile device before scaling to other claimable weapons.
 
+
+
+## Kaine-approved design update — Bloodright weapon transformation
+
+**Core fantasy:** Nina does not simply loot a defeated boss. For designated claimable weapons, she executes the boss with its own weapon, then infuses that weapon with her blood magic. The weapon's visual identity and name change to its permanent Bloodstorm form. This is a design specification; the complete cinematic, inventory, and save integration are not yet implemented.
+
+### Bloodright sequence
+1. A claimable boss reaches zero health and enters its execution state.
+2. Nina performs the boss-specific execution using the boss's own weapon where practical.
+3. Brief audio drop / arena hush; focus shifts to the weapon.
+4. Crimson blood threads travel from Nina into the weapon. Its original metal, silhouette, and markings visibly mutate.
+5. Blood runes ignite; the weapon settles into Nina's transformed form with a distinct sound and VFX cue.
+6. A clear title card displays **BLOODRIGHT CLAIMED** plus the official weapon name and a short flavor line.
+7. Only after the claim succeeds does the weapon become permanently available in the arsenal and save data.
+8. If the execution input is missed, provide a fair retry or recovery encounter; never silently deny the reward.
+
+### Canonical weapon forms
+| Boss/original form | Nina's Bloodright form | Status |
+|---|---|---|
+| Hammer of War | **Skull-Tithe** | Name approved by Kaine |
+| Twin Peaks | **The Widow's Kiss** | Name approved by Kaine |
+| Boss chain whip (working label) | **Devil's Tongue** | Name approved by Kaine |
+| Blood Blade | **Blood Blade** | Existing name retained |
+| Shadow Spears | **Shadow Spears** | Existing name retained |
+| Soul Chains | **Soul Chains** | Existing name retained |
+| Bow of Souls | **Bow of Souls** | Existing name retained |
+
+Blood Magic and Vampire Form remain abilities / transformation systems, not handheld weapons. Other boss weapons and claimable rewards need explicit mapping before being treated as canon. Do not invent new official names without Kaine's approval.
+
+### Design rules
+- Boss-form weapons should look functional, brutal, and less personally transformed; Nina's forms become darker, more ornate, crimson-lit, and recognizably hers.
+- Preserve each weapon family's combat role through transformation; the Bloodright changes its look and supernatural identity, not its core playstyle.
+- Not all 26 bosses must award weapons. Other rewards can include techniques, relics, upgrades, abilities, cosmetics, lore, or access keys.
+- Bloodright rewards do not add boss slots. **Bloodstorm remains exactly 26 main-campaign bosses; 15 additional bosses are reserved for Blood Rising.**
+- A weapon unlock must be represented in real inventory state and verified with save/load tests before claiming persistence works.
+
+### First implementation slice
+Build one end-to-end claim for **Hammer of War → Skull-Tithe**: original weapon presentation, execution trigger, crimson infusion effect, transformed visual/name reveal, inventory unlock, weapon selector entry, and persistence test. Only then generalize the system to The Widow's Kiss and Devil's Tongue.
+
