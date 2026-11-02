@@ -49,6 +49,8 @@ try {
     await page.goto(`http://127.0.0.1:${port}`, { waitUntil: 'domcontentloaded' });
     await page.waitForSelector('canvas', { timeout: 20000 });
     await page.waitForFunction(() => window.__NINASTORM_READY__ === true, { timeout: 20000 });
+    await page.locator('#play').click();
+    await page.waitForFunction(() => document.querySelector('#start').style.display === 'none');
     assert.equal(await page.locator('#arsenalBtn').innerText(), 'ARSENAL: BLOOD BLADE');
     await page.locator('#arsenalBtn').click();
     await page.waitForFunction(() => document.querySelector('#arsenalBtn').textContent === 'ARSENAL: SKULL-TITHE');
