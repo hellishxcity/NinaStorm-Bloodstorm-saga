@@ -161,7 +161,7 @@ for(let i=particles.length-1;i>=0;i--){const p=particles[i];p.life-=dt;p.v.y-=5*
 const target=new THREE.Vector3(player.position.x,1,player.position.z);const camPos=new THREE.Vector3(player.position.x,7.8,player.position.z+10.5);camera.position.lerp(camPos,.08);camera.lookAt(target.x,target.y,target.z-1.8);redLight.intensity=26+Math.sin(elapsed*2)*5;moonBall.scale.setScalar(1+Math.sin(elapsed*.7)*.025);updateHud();renderer.render(scene,camera);
 }
 addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);renderer.setPixelRatio(Math.min(devicePixelRatio,1.7))});
-if(bossWeaponClaimed){$('hint').textContent='Bloodright remembered on this device: SKULL-TITHE. Defeat the Dread Knight to replay the claim sequence.';}updateHud();loop();
+if(bossWeaponClaimed){$('hint').textContent='Bloodright remembered on this device: SKULL-TITHE. Defeat the Dread Knight to replay the claim sequence.';}updateHud();window.__NINASTORM_READY__=true;loop();
 })();
 </script>
 </body></html>
