@@ -23,8 +23,8 @@ const scriptChecks = [
 ];
 
 for (const [label, pattern] of scriptChecks) {
-  assert.match(script, pattern, \`Missing expected feature: \${label}\`);
-  console.log(\`PASS: \${label}\`);
+  assert.match(script, pattern, 'Missing expected feature: ' + label);
+  console.log('PASS: ' + label);
 }
 
 assert.match(html, /id="pad"/, 'Missing mobile touch movement control');
