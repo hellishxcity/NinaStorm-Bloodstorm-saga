@@ -72,6 +72,49 @@ try {
     await context.close();
   }
 
+  // Legacy save migration: the old marker should become the versioned save format.
+  {
+    const context = await browser.newContext({ viewport: { width: 1280, height: 800 } });
+    const page = await context.newPage();
+    await page.goto(`http://127.0.0.1:${port}`, { waitUntil: 'domcontentloaded' });
+    await page.waitForFunction(() => window.__NINASTORM_READY__ === true, { timeout: 20000 });
+    await page.evaluate(() => localStorage.setItem('ninastorm_bloodright_skull_tithe', 'claimed'));
+    await page.reload({ waitUntil: 'domcontentloaded' });
+    await page.waitForFunction(() => window.__NINASTORM_READY__ === true, { timeout: 20000 });
+    const migrated = await page.evaluate(() => JSON.parse(localStorage.getItem('ninastorm_bloodright_save_v1')));
+    assert.deepEqual(migrated, {
+      version: 1, unlockedWeapons: ['skull-tithe'], equippedWeapon: 'blood-blade'
+    }, 'Legacy Skull-Tithe marker should migrate into the versioned save');
+    await page.locator('#play').click();
+    await page.waitForFunction(() => document.querySelector('#start').style.display === 'none');
+    assert.equal(await page.locator('#arsenalBtn').innerText(), 'ARSENAL: BLOOD BLADE');
+    await page.locator('#arsenalBtn').click();
+    await page.waitForFunction(() => document.querySelector('#arsenalBtn').textContent === 'ARSENAL: SKULL-TITHE');
+    await context.close();
+  }
+
+  // Corrupt versioned data should not crash startup and should fall back to the legacy marker.
+  {
+    const context = await browser.newContext({ viewport: { width: 1280, height: 800 } });
+    const page = await context.newPage();
+    const pageErrors = [];
+    page.on('pageerror', error => pageErrors.push(error.message));
+    await page.goto(`http://127.0.0.1:${port}`, { waitUntil: 'domcontentloaded' });
+    await page.waitForFunction(() => window.__NINASTORM_READY__ === true, { timeout: 20000 });
+    await page.evaluate(() => {
+      localStorage.setItem('ninastorm_bloodright_save_v1', '{not valid json');
+      localStorage.setItem('ninastorm_bloodright_skull_tithe', 'claimed');
+    });
+    await page.reload({ waitUntil: 'domcontentloaded' });
+    await page.waitForFunction(() => window.__NINASTORM_READY__ === true, { timeout: 20000 });
+    const recovered = await page.evaluate(() => JSON.parse(localStorage.getItem('ninastorm_bloodright_save_v1')));
+    assert.deepEqual(recovered, {
+      version: 1, unlockedWeapons: ['skull-tithe'], equippedWeapon: 'blood-blade'
+    }, 'Corrupt versioned data should recover from the legacy marker');
+    assert.deepEqual(pageErrors, [], 'Corrupt save recovery should not throw runtime errors');
+    await context.close();
+  }
+
   // Mobile viewport: controls exist and touch layout is available.
   {
     const context = await browser.newContext({
