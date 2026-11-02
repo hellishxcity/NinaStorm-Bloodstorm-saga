@@ -105,7 +105,8 @@ function makeEnemy(x,z,isBoss=false,isElite=false){const g=new THREE.Group();sce
 for(let i=0;i<8;i++){let a=i/8*Math.PI*2;makeEnemy(Math.cos(a)*(8+Math.random()*2),Math.sin(a)*(8+Math.random()*2),i===7,!([0,3,7].includes(i))&&([2,5].includes(i)));}
 const particles=[];
 function burst(pos,color,count=12,power=4){for(let i=0;i<count;i++){const p=new THREE.Mesh(new THREE.SphereGeometry(.06+Math.random()*.07,5,5),new THREE.MeshBasicMaterial({color,transparent:true}));p.position.copy(pos);scene.add(p);particles.push({m:p,v:new THREE.Vector3((Math.random()-.5)*power,Math.random()*power,(Math.random()-.5)*power),life:.5+Math.random()*.6});}}
-let crouching=false;function setCrouching(on){crouching=on;const b=$('crouchBtn');if(b){b.innerHTML=on?'SNEAK<br>ON':'SNEAK<br>OFF';b.style.boxShadow=on?'0 0 18px #62f0bd88':'none';}say(on?'SNEAKING — MOVE SLOWLY AND APPROACH FROM BEHIND':'SNEAKING OFF',1000)}\nfunction say(s,ms=1500){$('message').textContent=s;$('message').style.opacity=1;lastMessage=performance.now()+ms}
+let crouching=false;function setCrouching(on){crouching=on;const b=$('crouchBtn');if(b){b.innerHTML=on?'SNEAK<br>ON':'SNEAK<br>OFF';b.style.boxShadow=on?'0 0 18px #62f0bd88':'none';}say(on?'SNEAKING — MOVE SLOWLY AND APPROACH FROM BEHIND':'SNEAKING OFF',1000)}
+function say(s,ms=1500){$('message').textContent=s;$('message').style.opacity=1;lastMessage=performance.now()+ms}
 function updateHud(){$('hp').style.width=Math.max(0,health)+'%';$('hpText').textContent=Math.max(0,Math.ceil(health))+' / 100';$('ess').style.width=Math.min(100,essence/5*100)+'%';$('essText').textContent=essence+' / 5';$('kills').textContent=kills+' / 7 + BOSS';$('goldText').textContent=goldCount;$('potionText').textContent=potions;syncWeaponPresentation();}
 const deathSplits=[];
 function createDeathSplit(e,finisher=false){
