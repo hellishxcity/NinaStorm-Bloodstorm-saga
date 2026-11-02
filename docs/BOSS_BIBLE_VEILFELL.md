@@ -120,6 +120,41 @@
 
 **Proposed ending reward:** *Crown of the Last Storm*, with the final form and powers shaped by Nina's story choices. The reward and ending details need Kaine's approval.
 
+
+## Kaine-approved true finale twist — Queen Seraveth
+
+**Status:** The story direction is approved; names, encounter details, and rewards below remain proposals. This design is not yet implemented gameplay.
+
+### Finale sequence
+1. **Four royal bodyguards (Bosses 22–25):** Garrick, Nyxara, Malgrath, and Vaelthar protect separate sections of Seraphel's stronghold. Each needs a distinct arena, attack language, counterplay lesson, unique Bloodright Execution, and reward.
+2. **Apparent final boss (Boss 26): Seraphel, the Fallen Angel.** Proposed phases: **The Fallen Prince** (celestial blade combat and readable aerial strikes); **Wrath of Heaven** (corrupted light and changing arena lanes); **Heaven's Last Judgment** (combined patterns and earned punish windows).
+3. **False ending:** Seraphel falls. The music stops; the fortress begins to collapse; the Bloodstorm appears to clear; bells ring across Veilfell. A cinematic montage suggests Nina has saved the kingdom. Fade to black and briefly tease victory or credits.
+4. **Surprise reveal:** After a pause, an unseen woman says: “You think you've won?” Then: “You killed my son.” Finally: “I am the Queen.” The screen flashes blood-red and the true final boss health bar appears.
+5. **True final boss: Queen Seraveth, the First Blood Queen and Queen of the Void.** She rises from a throne above the ruins, surrounded by shattered halos and black celestial wings; the arena is pulled into the Void.
+
+### Seraveth's secret
+Seraveth is an ancient source connected to Nina's vampire bloodline and is also the Queen of the Void. Nina's blood power has an ancient connection to her. Seraveth engineered events so Seraphel's death completes a ritual and opens a gateway between Veilfell and the Void. Revenge is her visible motive; her larger plan is to merge Veilfell with the Void and make her dominion permanent. Seraphel served her plan without knowing its full purpose.
+
+### Proposed Seraveth phases
+- **Phase I — The Mourning Queen:** precise celestial swordplay, wing strikes, and readable counter windows.
+- **Phase II — Mother of Ruin:** corrupted-light arena attacks and summoned threats, with clear telegraphs and safe response windows.
+- **Phase III — The Unbound Sovereign:** the ritual transforms the arena and unlocks more aggressive Void attacks. Nina can interrupt ritual anchors or punish readable recovery windows.
+- **Final sequence — The Queen's Last Stand:** bespoke cinematic execution and story resolution.
+
+### Foreshadowing
+- Ancient murals show a winged queen whose face has been scratched away.
+- Enemies react to Nina's blood as if they recognize an ancient lineage.
+- Inscriptions hint that Nina's power predates the known vampire houses.
+- Seraphel's dialogue hints that he serves his mother without knowing the full purpose of the war.
+- Earlier environmental symbols match the ritual circle revealed after Seraphel falls.
+
+### Reward and continuity
+- Proposed reward: **Voidblood Ascension**, a controlled Void-infused evolution of Nina's blood abilities with clear resource and cooldown limits.
+- A fragment of the Void may remain after Seraveth's defeat as a possible sequel hook; this ending detail is not locked.
+- The four bodyguards plus Seraphel form the five-boss gauntlet. Seraveth is the surprise true-finale encounter attached to the apparent ending.
+- The 26 main-campaign slots culminate in Seraphel; **Nina's Bloodstorm** remains optional post-campaign content. Seraveth is tracked as an additional encounter for production, even though she is revealed as the secret true final boss in the story.
+- This records design intent only. It does not claim the bosses, cutscenes, rewards, ritual, or combat systems are implemented.
+
 ## Bloodright Execution system — target specification
 1. Boss reaches zero health and enters a short staggered execution state.
 2. Camera, sound, and boss pose clearly communicate the opening (full cinematic treatment is a later milestone).
@@ -172,11 +207,13 @@
 21. **The Crownless Prince** — A fallen royal duelist whose phases reflect Nina's weapon style. Proposed reward: *Crownless Vow*, a weapon stance.
 
 ### Act VI — The Veil Throne (Bosses 22–26)
-22. **The Stormbound Leviathan** — A colossal storm creature fought on a shattered causeway; use a grounded arena version for the first playable build. Proposed reward: *Stormcall*.
-23. **The Queen's Shadow** — A supernatural mirror of Nina that reuses a limited set of recognizable player moves. Proposed reward: *Umbral Double*.
-24. **The Fallen Seraph's Herald** — A winged champion who teaches the light/shadow arena rules before the finale. Proposed reward: *Halo Breaker*.
-25. **Seraphel, the Fallen Angel** — Proposed final antagonist encounter, evolving from a precise celestial duel into a Bloodstorm-transformed phase. Proposed reward/ending: *Crown of the Last Storm*, shaped by story choices.
-26. **Nina's Bloodstorm (Epilogue Trial)** — An optional post-campaign trial against a manifestation of Nina's own power, not a second canonical Nina. Tests all learned mechanics and offers a mastery reward rather than a story-ending kill. Proposed reward: *Bloodstorm Sovereign* title and a cosmetic aura.
+22. **Garrick, the Iron Vow** *(proposed royal bodyguard)* — Armored greatsword guardian who tests parries, guard breaks, and patience. Proposed reward: *Iron Vow* relic.
+23. **Nyxara, the Veilblade** *(proposed royal bodyguard)* — Swift assassin who tests dodge timing, target tracking, and counters. Proposed reward: *Veilstep* technique.
+24. **Malgrath, the Blood Reaver** *(proposed royal bodyguard)* — Brutal executioner who controls space with heavy attacks and blood-draining pressure. Proposed reward: *Reaver's Grasp*.
+25. **Vaelthar, the Fallen Champion** *(proposed royal bodyguard)* — The strongest bodyguard, with multiple phases, aerial pressure, and a desperate final stance. Proposed reward: *Champion's Ruin*.
+26. **Seraphel, the Fallen Angel** — The apparent final boss. After all four guardians fall, Nina faces Seraphel in a multi-phase celestial duel that escalates into the Bloodstorm. His defeat triggers the false ending and reveals Queen Seraveth as the true final boss. Proposed reward: *Crown of the Last Storm* (subject to ending choices).
+
+**Optional post-campaign content:** **Nina's Bloodstorm (Epilogue Trial)** remains an optional mastery challenge against a manifestation of Nina's own power. It is not counted among the 26 main-campaign bosses; proposed reward: *Bloodstorm Sovereign* title and a cosmetic aura.
 
 ### Scope and production plan
 - **Original campaign target:** 26 named boss encounters across six acts, with boss 26 as an optional epilogue trial.
@@ -459,8 +496,8 @@
 
 ## Decisions for Kaine
 1. Approve, rename, or replace any of the six proposed bosses.
-2. Choose whether Father Malrec is a penultimate boss and Seraphel the final boss.
+2. The finale direction is set: four royal bodyguards → Seraphel → false ending → Queen Seraveth as the secret true final boss. The exact ending and whether a Void fragment remains inside Nina are still open.
 3. Decide whether Nina's major executions are always lethal, or whether certain story choices allow mercy, binding, or recruitment.
 4. Confirm if Ashen Judgment should remain the Dread Knight reward and whether its current 5-damage / 7-radius / 8-second-cooldown prototype values feel right after testing.
 
-**Status:** Design draft for review. Kaine has approved the 41-boss target (26 original + 15 mythic additions). Nothing in this document changes the live/main branch or claims these proposed encounters are already playable.
+**Status:** Design draft for review. Kaine has approved the 41-boss target (26 original + 15 mythic additions) and the Seraveth true-finale twist for The Bloodstorm. The 26 main-campaign slots culminate in Seraphel; the optional Nina's Bloodstorm trial is post-campaign, and Seraveth is the hidden second finale encounter. These proposals are not yet playable and nothing here changes the live/main branch.
