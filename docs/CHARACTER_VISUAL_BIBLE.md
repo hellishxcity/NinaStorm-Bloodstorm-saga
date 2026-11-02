@@ -79,14 +79,12 @@ These are **wardrobe concepts**, not a commitment that every outfit ships in the
 
 Outfits must preserve silhouette and readability, avoid clipping during attacks and dodges, and maintain clear material separation between cloth, leather, metal, hair, and blood VFX. Cosmetic outfits should not silently change combat stats unless explicitly designed as equipment.
 
-## 5. Character creation mockup
-The provided UI concept depicts class choices (Vampire, Warrior, Rogue, Sorceress, Ranger) and customization controls for skin tone, hair style, eye color, and body type.
+## 5. Canonical protagonist — no class selection
+Nina Storm is the fixed protagonist: the vampire queen of Veilfell. The class-selection concept (Vampire, Warrior, Rogue, Sorceress, Ranger) is **removed from Bloodstorm's character design** and must not be implemented as a character-creation screen or class-selection mechanic.
 
-**Canon/design caution:** Nina is the named protagonist and established vampire queen. Do not make the core identity or story dependent on changing Nina into an unrelated class. If this UI is used, consider separating:
-- Nina's fixed story identity and signature features, from
-- optional cosmetic customization, alternate loadouts, or a separate create-your-own-character mode.
+Nina's build variety comes from her weapons, Bloodright claims, skill choices, upgrades, and the four combat disciplines already established for the game: Crimson Duelist, Grave Warden, Night Veil, and Storm Reaver. These are progression / combat specializations, not different character classes that replace her identity as a vampire queen.
 
-Class selection is currently a concept shown in the reference image, not an approved change to Nina's canonical class system.
+Optional cosmetic customization may be considered separately, but it must preserve Nina's canonical identity and does not imply a class choice.
 
 ## 6. Gameplay and VFX readability
 - Red/crimson is Nina's signature supernatural accent; use it to communicate blood magic and high-value combat events.
