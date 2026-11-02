@@ -14,7 +14,7 @@ const scriptChecks = [
   ['versioned Bloodright save key', /ninastorm_bloodright_save_v1/],
   ['legacy save migration key', /ninastorm_bloodright_skull_tithe/],
   ['save format version', /version:1/],
-  ['Skull-Tithe unlock persistence', /unlockedWeapons:\[\s*["']skull-tithe["']\s*\]/],
+  ['Skull-Tithe unlock persistence', /unlockedWeapons:bossWeaponClaimed\?\[\s*["']skull-tithe["']\s*\]:\[\]/],
   ['weapon toggle action', /function toggleWeapon\(/],
   ['Arsenal button interaction', /arsenalBtn.*toggleWeapon/s],
   ['duplicate reward guard', /const firstClaim=!bossWeaponClaimed/],
